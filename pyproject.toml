@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "makegif"
+version = "0.1.0"
+description = ""
+authors = ["Matthias Henning <matze_henning@gmx.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -8,9 +8,9 @@ def make_gif(frame_folder : pathlib.Path):
 
     dest = frame_folder.joinpath("my_awesome.gif")
 
-    print(dest)
+    append = frames + frames[-2:-len(frames):-1]
 
-    frame_one.save(dest, format="GIF", append_images=frames, save_all=True, duration=200, loop=0)
+    frame_one.save(dest, format="GIF", append_images=frames, save_all=True, duration=300, loop=0)
 
 if __name__ == "__main__":
     path = pathlib.Path(r'C:\Users\matze\Desktop\export\Kinder\gif')
